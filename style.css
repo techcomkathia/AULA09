@@ -1,0 +1,78 @@
+/* RESET DE PROPRIEDADES PADRÃO PARA TODOS OS ELEMENTOS */
+/* Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIAVEIS GLOBAIS (:ROOT) */
+/* familia da fonte textos */
+/* cor1 - background principal e fontes das ancoras */
+/* cor2 - background das ancoras e fontes do título principal */
+/* cor3 - background das ancoras para o hover */
+:root{
+    --cor1: #ffffff;
+    --cor2: blueviolet ;
+    --cor3: rgb(222, 39, 186) ;
+    --fonte-textos: 'Lato', 'Arial', sans-serif;
+}
+
+
+
+body{
+    background-image:url(black-texture.jpg) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+img{
+    width: 200px;
+    border-radius: 100%;
+}
+
+main{
+    display: flex;
+    background-color: var(--cor1);
+    flex-direction: column;
+    width: 350px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+h1{
+    font-size: 45px;
+    color: var(--cor2);
+    margin: 20px;
+}
+
+p{
+    text-align: center;
+    font-size: 18px;
+    font-family: var(--fonte-textos);
+}
+
+a{
+    text-decoration: none;
+    background-color: var(--cor2);
+    color: var(--cor1);
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+a:hover{
+    background-color: var(--cor3) ;
+    
+}
